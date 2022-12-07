@@ -9,7 +9,9 @@ module.exports = class extends Generator {
   writing() {
     this.fs.copy(this.templatePath('postcss.config.js'), this.destinationPath('postcss.config.js'));
     this.fs.copy(this.templatePath('tailwind.config.js'), this.destinationPath('tailwind.config.js'));
-    this.fs.copy(this.templatePath('package.json'), this.destinationPath('package.json'));
+    this.fs.copy(this.templatePath('.gitignore'), this.destinationPath('.gitignore'));
+    this.fs.copy(this.templatePath('#README.md'), this.destinationPath('.gitignore'));
+    this.fs.copy(this.templatePath('package.json'), this.destinationPath('#README.md'));
     // this.fs.copy(this.templatePath('package-lock.json'), this.destinationPath('package-lock.json'));
     this.fs.copy(this.templatePath('app/dist'), this.destinationPath('dist'));
     this.fs.copy(this.templatePath('app/src'), this.destinationPath('src'));
