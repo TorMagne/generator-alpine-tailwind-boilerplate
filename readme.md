@@ -14,7 +14,7 @@ Install Yeoman globally:
 
 Then install the Alpine.js, Tailwindcss with Postcss boilerplate generator globally:
 
-    npm install -g generator-atp-boilerplate
+    npm install -g generator-alpine-tailwind-boilerplate
 
 Navigate to a directory you want to generate the files in, then run
 
@@ -25,4 +25,5 @@ command to wathc tailwind css
     npm run watch:css
 
 Use vscode liver-server to run the project
+
 # generator-alpine-tailwind-boilerplate
