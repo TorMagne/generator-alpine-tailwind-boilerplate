@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- alpine js -->
+    <script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
+  </head>
+  <body>
+    <div x-data="indexApp()">
+      <h1 class="text-3xl font-bold underline">Hello world!</h1>
+      <button x-on:click="getPokemon">Get pokemons</button>
+      <button x-on:click="open = !open ">Toggle content</button>
+      <div x-show="open">Hello..</div>
+      <template x-for="(pokemon, index) in pokemons" :key="index" x-if="pokemons.lenght > 0">
+        <ul>
+          <li>
+            <span x-text="index + ': '"></span>
+            <span x-text="pokemon.name"></span>
+          </li>
+        </ul>
+      </template>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
