@@ -1,9 +1,9 @@
-const updateNotifier = require('update-notifier');
-const packageJson = require('./templates/package.json', assert, { type: 'json' });
-const generator = 'yeoman-generator';
+import updateNotifier from 'update-notifier';
+import packageJson from './package.json' assert { type: 'json' };
+const Generator = require('yeoman-generator');
 updateNotifier({ pkg: packageJson }).notify();
 
-module.exports = class extends generator {
+module.exports = class extends Generator {
   welcome() {
     this.log('Welcome to the Alpine, Tailwindcss with postcss generator');
     this.log('Starting copying files');
