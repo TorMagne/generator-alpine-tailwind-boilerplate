@@ -1,6 +1,6 @@
 {
   "name": "generator-alpine-tailwind-boilerplate",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "",
   "files": [
     "generators"
@@ -13,7 +13,6 @@
   "author": "brekkenmedia",
   "license": "ISC",
   "dependencies": {
-    "update-notifier": "^6.0.2",
     "yeoman-generator": "^5.7.0"
   }
 }
