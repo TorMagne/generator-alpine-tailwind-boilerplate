@@ -22,6 +22,7 @@ export default class extends generator {
   end() {
     this.log(' ');
     this.log('Finished generating files!');
+    this.log('Now get to work');
     this.log(' ');
   }
 }
