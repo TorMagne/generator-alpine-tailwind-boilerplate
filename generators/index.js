@@ -1,6 +1,6 @@
-import updateNotifier from 'update-notifier';
-import packageJson from './templates/package.json' assert { type: 'json' };
-import generator from 'yeoman-generator';
+const updateNotifier = require('update-notifier');
+const packageJson = require('./templates/package.json', assert, { type: 'json' });
+const generator = 'yeoman-generator';
 updateNotifier({ pkg: packageJson }).notify();
 
 module.exports = class extends generator {
