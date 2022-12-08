@@ -1,6 +1,6 @@
 {
   "name": "generator-alpine-tailwind-boilerplate",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "",
   "files": [
     "generators"
