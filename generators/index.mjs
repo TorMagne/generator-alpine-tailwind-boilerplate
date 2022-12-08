@@ -3,7 +3,7 @@ import packageJson from './templates/package.json' assert { type: 'json' };
 import generator from 'yeoman-generator';
 updateNotifier({ pkg: packageJson }).notify();
 
-module.exports = class extends generator {
+export default class extends generator {
   welcome() {
     this.log('Welcome to the Alpine, Tailwindcss with postcss generator');
     this.log('Starting copying files');
@@ -24,4 +24,4 @@ module.exports = class extends generator {
     this.log('Finished generating files!');
     this.log(' ');
   }
-};
+}
